@@ -1,9 +1,5 @@
 import mongoose from "mongoose";
 
-const atlas_server_info =
-  "mongodb+srv://pavan:PAVANtejamongo%401234@cluster0.22lbd4q.mongodb.net";
-const database_name = "photography";
-
 async function connectDB() {
   try {
     await mongoose.connect(`${atlas_server_info}/${database_name}`);
